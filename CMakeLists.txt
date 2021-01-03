@@ -9,6 +9,4 @@ add_executable(cmake-hello-world main.c)
 
 add_subdirectory(hello-world)
 
-target_include_directories(cmake-hello-world PRIVATE 
-                           "${PROJECT_SOURCE_DIR}/hello-world")
 target_link_libraries(cmake-hello-world hello-world)
